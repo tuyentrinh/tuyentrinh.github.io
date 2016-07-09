@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BÀI TẬP HTML</title>
+	<meta charset="utf-8">
+	<style>
+		#bai{
+			border:1px solid red;
+			width:22%;
+			padding:1%;
+			margin-top:2%;
+			margin-left:2px;
+			float:left;
+		}
+	</style>
+	<body>
+		<div id="bai">
+			<p><b><u>BÀI 1</u></b>Tính bình phương của một số</p>
+
+			<button onclick="binhphuong()">PHÉP TÍNH</button>
+
+			<p id="demo1"></p>
+
+			<script>
+				function binhphuong(){
+					var x = prompt("Nhập giá trị cần tính bình phương vào:");
+
+					document.getElementById('demo1').innerHTML = x*x;
+				}
+			</script>
+		</div>
+		<div id="bai">
+			<p><b><u>BÀI 2:</u></b>Tính bình phương của (3a+2b-c)</p>
+			<button onclick="pheptinh()">PHÉP TÍNH</button>
+			<p id="demo2"></p>
+			<script>
+				function pheptinh(){
+					var arr = prompt("Mời bạn nhập dãy ba số ngăn cách nhau bởi dấu phẩy:");
+					var arr1 = JSON.parse("[" + arr + "]");
+					document.getElementById('demo2').innerHTML = (3*arr1[0]+2*arr1[1]-arr1[2])*(3*arr1[0]+2*arr1[1]-arr1[2]);
+					// document.write(arr1[0]*arr1[1]*arr1[2]);(hàm đưa giá trị ra ngoài một cửa sổ mới nó tương tự như hàm document.gêtlementbyid)
+				}
+			</script>
+		</div>	
+		<div id="bai">
+			<p><b><u>BÀI 2:</u></b>Tính bình phương của (3a+2b-c)</p>
+			<button onclick="pheptinh1()">PHÉP TÍNH</button>
+			<p id="demox"></p>
+			<script>
+				function pheptinh1(){
+					var a = prompt("Mời bạn nhập số thứ nhất vào:");
+					var b = prompt("Mời bạn nhập số thứ hai vào:");
+					var c = prompt("Mời bạn nhập số thứ ba vào:");					
+					document.getElementById('demox').innerHTML = (3*a+2*b-c)*(3*a+2*b-c);
+					// document.write(arr1[0]*arr1[1]*arr1[2]);(hàm đưa giá trị ra ngoài một cửa sổ mới nó tương tự như hàm document.gêtlementbyid)
+				}
+			</script>
+		</div>
+		<div id="bai">
+			<p><b><u>BÀI 3:</u></b>Lấy mười kí tự đầu tiên của một dãy:</p>
+			<button onclick="pheptinh2()">PHÉP TOÁN</button>
+			<p id="demo3"></p>
+			<script>
+				function pheptinh2(){
+					//funtion là khai báo tập hợp một đoạn code xử lý
+					var a=prompt("Mời bạn nhập chuỗi kí tự vào:")
+					var b=a.split("");				
+					document.getElementById('demo3').innerHTML = b[0]+b[1]+b[2]+b[3]+b[4]+b[5]+b[6]+b[7]+b[8]+b[9]+"...";
+				}	
+			</script>
+		</div>
+		<div id="bai">
+			<p><b><u>BÀI 4:</u></b>Viết hoa chữ cái đầu tiên:</p>
+			<button onclick="chuoi()">PHÉP TOÁN</button>
+			<p id="demo4"></p>
+			<script>
+				function chuoi(){
+					//funtion là khai báo tập hợp một đoạn code xử lý
+					var a=prompt("Mời bạn nhập văn bản vào:")
+
+					document.getElementById('demo4').innerHTML = a.charAt(0).toUpperCase()+a.slice(1);
+                    // lệnh viết hoa chữ cái đầu tiên a.charAt(0).toUpperCase()+a.slice(1)
+                }
+            </script>
+        </div>
+        <div id="bai">
+        	<p><b><u>BÀI 5:</u></b>Tìm số nhỏ nhất trong dãy:</p>
+        	<button onclick="chuoi5()">PHÉP TOÁN</button>
+        	<p id="demo5">Số nhỏ nhất trong dãy số là:</p>
+        	<script>
+        		function chuoi5(){
+        			// hàm khái báo chuỗi
+        			var a5 = prompt("Mời bạn nhập dãy ba số ngăn cách nhau bởi dấu phẩy:");
+        			// hàm chuyển chuỗi thành mảng số
+        			var points= JSON.parse("[" + a5 + "]");
+        			// hàm tìm giá trị nhỏ nhất trong mảng sổ 
+        			points.sort(function(a, b){return a-b});
+        			document.getElementById("demo5").innerHTML = points[0];
+
+        		}
+        		
+        	</script>
+        </div>
+        <div id="bai">
+        	<p><b><u>BÀI 6:</u></b>Sắp xếp tên học sinh theo thứ tự bảng chữ cái:</p>
+        	<button onclick="chuoi6()">PHÉP TOÁN</button>
+        	<p id="demo6">Thứ tự sắp xếp tên theo bảng chữ cái là:</p>
+        	<script>
+        		function chuoi6(){
+        			var a6 = prompt("Mời bạn nhập tên sinh viên ngăn cách nhau bởi dấu phẩy:");
+        			var name= a6.split(",");
+
+
+        			name.sort();
+        			document.getElementById("demo6").innerHTML = name;
+        		}
+
+        	</script>
+        </div>
+        <div id="bai">
+        	<p><b><u>BÀI 7:Thông tin cần tra cứu:</u></b></p>
+        	<button onclick="aboutMe()">PHÉP TOÁN</button>
+        	<p id="demo7">Thông tin thu được là:</p>
+        	<script>
+        		function aboutMe(){
+        			var a7 = prompt("Mời bạn nhập đúng thứ tự Tên,Họ,Tuổi vào mỗi dữ liệu ngăn cách nhau bởi dấu phẩy:");
+        			var say= a7.split(",");
+
+
+        			
+        			document.getElementById("demo7").innerHTML = "xin chào,Tôi là "+say[1]+" "+say[0]+",năm nay tôi "+say[2]+" tuổi";
+        		}
+
+
+
+        		var aboutme = function(){
+        			return "avs"+this.firstName;
+        		}
+
+
+        	</script>
+        </div>
+        <div id="bai">
+        	<p><b><u>BÀI 7:</u></b>Đưa thông tin ra màn hình</p>
+        	<button onclick="aboutMe1()">PHÉP TÍNH</button>
+        	<p id="say1"></p>
+        	<script>
+        		function aboutMe1(){
+        			var a = prompt("Mời bạn nhập họ vào:");
+        			var b = prompt("Mời bạn nhập tên vào:");
+        			var c = prompt("Mời bạn nhập tuổi vào:");					
+        			document.getElementById('say1').innerHTML = "xin chào,Tôi là " +a+ " " +b+ ",năm nay tôi " +c+ " tuổi!"; ;
+					// document.write(arr1[0]*arr1[1]*arr1[2]);(hàm đưa giá trị ra ngoài một cửa sổ mới nó tương tự như hàm document.gêtlementbyid)
+				}
+			</script>
+		</div>
+	</div>
+	
+</body>
+</html>
+
