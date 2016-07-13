@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>BÀI TẬP PHẦN DOM</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="wrap">
+<h1>NHỮNG NHÂN VẬT PHONG LƯU TRONG KIẾM HIỆP KIM DUNG</h1>
+<div class="d1">
+<h2 id="h2">VI TIỂU BẢO</h2>
+<img src="vitieubao.jpg"/>
+<p id="p1">Một trong những nhân vật luôn luôn được nói đến với phong cách phong lưu đứng đầu trong kiếm hiệp Kim Dung.Vi Tiêu Bảo được đứng đầu trong bảng xếp hạng những nhân vật có độ phong lưu hàng đầu.Có tới 7 bà vợ sinh đẹp và không ít các cuộc tình bên ngoài.Thực tài không phải võ công cao ngất ngưỡng để cho cả thiên hạ kinh sợ,mà là khả năng uốn lưỡi biến hóa không lường và làm việc luôn khôn ngoan và có trách nhiệm.Với phong thái phóng khoáng,tâm hồn lãng tử,thích vui chơi,đặc biệt Trọng tình trọng nghĩa với bạn bè luôn là điểm thu hút lớn nhất của nhân vật này.
+</p>
+</div>
+<hr/>
+<div class="d2">
+<h2 id="h2">DƯƠNG QUÁ</h2>
+<img src="duongqua.jpg"/>
+<p id="p2">Nhân vật có độ phong lưu được kể đến với phong cách cũng lãng tử nhưng lại vô cùng trung tình trước vẻ đẹp của Sư phụ mình.Một lòng chỉ yêu thương một người con gái xuất đời cho dù xa cách bao lâu.Nhân vật này nói đến đâu chúng ta có thể đoán ra phần nào chính là Dương Quá.Dương quá có thể nói là người biết nhiều loại võ công,từ võ công Đông Tà,Tây Độc,Bắc Cái,Tru Thần Thông,cửu âm chân kinh.Và đặc biệt hơn cả lại là truyền nhân của Độc Cô Cầu Bại nhân vật truyền thuyết với võ công không có đối thủ trong tiểu thuyết của Kim Dung.Được bao nhiêu cô gái mến mộ và trong đó có cả con gái út của Quách Tĩnh:Quách Tương
+</p>
+</div>
+<hr/>
+<div class="d3">
+<h2 id="h2">QUÁCH TĨNH</h2>
+<img src="quachtinh.jpg"/>
+<p id="p3">Nhân vật tối sắp nói đến không phải theo khía cạnh phong lưu được nhiều cô gái theo đuổi mà chính là cuộc sống hạnh phúc cùng người con gái mình yêu và mình theo đuổi.Nhân vật võ võ công chí dương,chí cương làm cho thiên hạ nễ phục trước võ công tuyệt thế,tầm lòng khoan dung độ lượng,tài thao lược trong việc chỉ huy quân đội của một thành trấn giữ trước kẻ thù xâm lược.Hồi trẻ ngây ngô đã được người con gái vừa xinh đẹp,thông minh,nhanh nhẹn phải lòng và đặc biệt là con gái cưng của Đông Tà.Quách Tĩnh được xếp vào hạng các tràng trai phong lưu của Kim Dung bởi chính cuộc sống hạnh phúc của nhân vật sau bao lần lận đận vất vả để có cuộc sống cùng người mình yêu.</p>
+</div>
+</div>
+
+<script>
+var d=document.getElementsByTagName('div');
+var a=document.getElementsByTagName('p');
+var b=document.getElementsByClassName('wrap');
+function changeFontSize(x){	
+	for(i=0;i<a.length;i=i+1){
+		a[i].style.fontSize=x
+	}
+}
+function increaseFontSize(pid){
+    var p=document.getElementById(pid);    
+    var x = parseInt(window.getComputedStyle(p, null).getPropertyValue('font-size'));
+    if (x+1 < 30){
+    	p.style.fontSize=x+1;}
+}
+function decreaseFontSize(pid){
+    var p=document.getElementById(pid);
+    //hàm lấy giá trị font-size của đoạn văn hiện tại
+    var x = parseInt(window.getComputedStyle(p, null).getPropertyValue('font-size'));
+    if (x-1>=10){
+    	p.style.fontSize=x-1;}
+}
+function changeColor(){
+
+	d[0].style.color="green";		
+	d[1].style.color="yellow";
+	d[2].style.color="red";	}
+
+function changeBgColor(m){
+	b[0].style.backgroundColor=m;}
+function copyContent(y1,y2){
+	var z1=document.getElementById(y1);
+	var z2=document.getElementById(y2);
+	z1.innerText=z2.innerText;
+}
+	
+</script>
+</body>
+</html>
