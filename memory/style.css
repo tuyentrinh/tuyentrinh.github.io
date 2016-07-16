@@ -1,0 +1,40 @@
+/*.wrap{
+	margin:auto;
+	position:relative;
+}*/
+/*.content{
+	position:relative;
+	overflow:auto;
+}*/
+/*.grid{
+	float:left;
+	padding:10px;
+}*/
+.card{
+	position:relative;
+	float:left;
+	margin:30px;
+}
+
+.front{
+	transform:rotateY(180deg);
+}
+.a1{
+	transform:rotateY(180deg);
+}
+.back{
+	position:absolute;
+	/*top:0;
+	left:0;*/
+}
+
+/*.card:hover .front{
+	transform:rotateY(0deg);
+}
+.card:hover .back{
+	transform:rotateY(180deg);
+}
+.card .front,.card .back{
+	transition: all 1s;
+	backface-visibility:hidden;
+}*/

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".f1").click(function(){
+        $(".b1 img").toggleClass("a1");
+    });
+});
+$(document).ready(function(){
+    $(".f2").click(function(){
+        $(".b2 img").toggleClass("a1");
+    });
+});
+</script>
+<style>
+.card{
+ position:relative;
+ float:left;
+ margin:30px;
+}
+
+.a1{
+ transform:rotateY(180deg);
+}
+/*.a1{
+ transform:rotateY(180deg);
+}*/
+.a2{
+ position:absolute;
+ top:0;
+ left:0;
+}
+
+/*.card:hover .front{
+ transform:rotateY(0deg);
+}
+.card:hover .back{
+ transform:rotateY(180deg);
+}*/
+img{
+ transition: all 2s;
+ backface-visibility:hidden;
+}
+</style>
+</head>
+<body>
+
+  <div class="b1 card">
+      <div >
+       <img class="a1" src="http://data.kenhsinhvien.net/upload/photos/KenhSinhVien.Net-yu-gi-oh-fic-golden-edition-4.jpg"/>
+      </div>
+      <div >
+       <img class="a2 f1" src="http://files.diendanbaclieu.net/2014/T02/img/diendanbaclieu-110174-share99-net-yu-gi-oh-viet-hoa-2.jpg"/>  
+      </div>
+     </div>     
+     <div class="b2 card">
+      <div >
+       <img class="a1" src="http://data.kenhsinhvien.net/upload/photos/KenhSinhVien.Net-yu-gi-oh-fic-golden-edition-4.jpg"/>
+
+      </div>
+      <div >
+       <img class="a2 f2" src="http://files.diendanbaclieu.net/2014/T02/img/diendanbaclieu-110174-share99-net-yu-gi-oh-viet-hoa-2.jpg"/>
+      </div>
+     </div>
+</body>
+</html>
