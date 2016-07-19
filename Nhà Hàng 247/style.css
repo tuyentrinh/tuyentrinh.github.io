@@ -1,0 +1,116 @@
+
+h1{
+	text-align: center;
+	margin:auto;
+	
+	background: orange;
+	font-size:1.5em;
+}
+.wrap{
+	max-width: 1000px;
+	margin:auto;
+	position:relative;
+
+}
+#main-menu{
+	border:1px solid black;
+	height: 40px;
+	padding-top: 24px;
+
+}
+
+#main-menu a{
+	font-size: 20px;
+	color:black;
+	text-decoration: none;
+	line-height: 20px;
+	padding:20px;
+	margin:90px;
+}
+
+
+#main-menu a.hover,a.active{
+	color:black;
+}
+#main-menu a.active{
+	font-weight: unset;
+}
+#main-content img{
+	width:250px;
+	height:200px;
+	
+
+}
+#main-content img:hover{
+	border-radius: 50%;
+
+}
+
+#banner img{
+	width: 1000px;
+	height:250px;
+
+}
+.box{
+	border:1px solid purple;
+	float: left;
+	margin-top: 50px;	
+	padding:10px;
+	width: 250px;
+	margin-left: 40px;
+	height: 120%;
+	box-shadow:10px 10px 5px #c68c53;
+
+}
+#main-content h2,p{
+	text-align: center;
+}
+#main-content h2{
+	text-decoration: underline;
+}
+
+
+.info{
+	border-color:red;
+
+}
+.contact{
+	border-color:blue;
+}
+.company{
+	border-color:green;
+}
+.info span{
+	color:red;
+}
+.monan img{
+	width:400px;
+	height:400px;
+	margin-left:30%;
+}
+.monan{
+	margin:auto;
+}
+h2,h3{
+	text-align: center;
+}
+h2{
+	text-decoration: underline;
+}
+#anh2{
+	margin-left:30%;
+	width:400px;
+	height:400px;
+}
+p{
+	font-size:20px;
+}
+.gioithieu img{
+	width:1000px;
+	height:300px;
+}
+.thongtin img{
+	width:61%;
+	height:300px;
+	margin-left:18%;
+}
