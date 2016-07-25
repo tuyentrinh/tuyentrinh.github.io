@@ -9,24 +9,29 @@ h1{
 .wrap{
 	max-width: 1000px;
 	margin:auto;
+	position:relative;
 
 }
 #menu{
-	border:1px solid black;
-	padding:3px;
+	margin-left:10%;
     position:absolute;	
-	margin-top:35px;
+	margin-top:33px;
+}
+#menu1{	
+	margin-left:78%;
+    position:absolute;	
+	margin-top:33px;
 }
 .main-menu a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
-
 .main-menu{
 	z-index: 1;
 	height: 190px;
 	padding-top: 24px;
     position:absolute;
-	margin-top:36px;
+	margin-top:83px;
+	margin-left:7%;
 	transition:0.5s;
 	background-color: orange;
 	width:0px;
@@ -41,6 +46,8 @@ h1{
 	padding:20px;
 	display:block;	
 }
+
+
 .closebtn {
     position: absolute;
     top: -5px;
@@ -48,7 +55,25 @@ h1{
     font-size: 36px !important;
     margin-left: 50px;
 }
-
+#thucdon{
+	
+    background-color: orange;
+    border: solid 1px orange;
+	top:374px;
+	position:absolute;
+	width:200px;
+	margin-left:76%;
+}
+#thucdon a{
+display: block;
+text-decoration:none;
+padding:20px;
+font-size:20px;
+color:black;
+}
+#thucdon{
+display:none;
+}
 
 #main-content img{
 	width:250px;
@@ -97,4 +122,35 @@ h1{
 }
 .info span{
 	color:red;
+}
+.monan img{
+	width:400px;
+	height:400px;
+	margin-left:30%;
+}
+.monan{
+	margin:auto;
+}
+h2,h3{
+	text-align: center;
+}
+h2{
+	text-decoration: underline;
+}
+#anh2{
+	margin-left:30%;
+	width:400px;
+	height:400px;
+}
+p{
+	font-size:20px;
+}
+.gioithieu img{
+	width:1000px;
+	height:300px;
+}
+.thongtin img{
+	width:61%;
+	height:300px;
+	margin-left:18%;
 }

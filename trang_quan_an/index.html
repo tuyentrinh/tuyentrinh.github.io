@@ -12,7 +12,9 @@
 			<img src="banner.jpg">
 		</div>
 		<br/><br/>
-		<div id="main-menu">
+		
+		<div id="chay" class="main-menu" >
+			<a href="#" class="closebtn" onclick="closeNav()">×</a>
 			
 			<a href="index.html"> TRANG TRỦ</a>
 			
@@ -23,6 +25,7 @@
 			<a href="css.html"> THÔNG TIN</a>
 			
 		</div>
+		<div id="menu" onclick="openNav()">☰ MENU</div>
 		<br/><br/>
 		<h1>THỰC ĐƠN</h1>
 		<div id="main-content">
@@ -111,5 +114,14 @@
 
 		</div>
 	</div>
+	<script>
+       function openNav(){
+    document.getElementById("chay").style.width = "180px";
+}
+
+    function closeNav(){
+    document.getElementById("chay").style.width = "0";
+}
+</script>
 </body>
 </html>
