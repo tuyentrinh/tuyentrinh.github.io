@@ -154,3 +154,9 @@ p{
 	height:300px;
 	margin-left:18%;
 }
+#lentop img{
+	position:fixed;
+	bottom:50px;
+	right:50px;
+	width:50px;
+}
