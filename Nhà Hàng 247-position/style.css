@@ -160,3 +160,16 @@ p{
 	right:50px;
 	width:50px;
 }
+@keyframes title{
+	0% { color:rgb(191, 121, 219);bottom:10%;right:10%;}
+	25%{color:rgba(191, 121, 219, 0.75);bottom:10%;right:20%;}
+	50%{color:rgba(191, 121, 219, 0.42);bottom:10%;right:30%;}
+	75%{color:rgba(191, 121, 219, 0.62);bottom:10%;right:40%;}
+	100%{color:rgba(191, 121, 219, 0.2);bottom:10%;right:50%;}
+
+}
+#gd{
+	text-decoration:none;
+	position:absolute;
+	amination:title 10s ease infinite;
+}
