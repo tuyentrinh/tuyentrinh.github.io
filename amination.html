@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+position:absolute;
+    background-color: red;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    /*ten amination*/
+    animation-name: example;
+/*thời gian hoàn thành chuyển động*/
+    animation-duration: 3s;
+/*tính chất của chuyển động*/
+    animation-timing-function:lenear;
+/*dang chuyen dong la mac dinh hay dao nguoc*/
+    animation-direction:normal;
+/*so lan thuc hien chuyen dong*/
+    animation-iteration-count:infinite;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {left:100%;opacity:1;}
+    to {left:50%;opacity:0;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+</body>
+</html>
+
