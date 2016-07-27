@@ -161,15 +161,16 @@ p{
 	width:50px;
 }
 @keyframes title{
-	0% { color:rgb(191, 121, 219);bottom:10%;right:10%;}
-	25%{color:rgba(191, 121, 219, 0.75);bottom:10%;right:20%;}
-	50%{color:rgba(191, 121, 219, 0.42);bottom:10%;right:30%;}
-	75%{color:rgba(191, 121, 219, 0.62);bottom:10%;right:40%;}
-	100%{color:rgba(191, 121, 219, 0.2);bottom:10%;right:50%;}
+	from{left:70%;opacity:1;}
+	to {left:40%;opacity:0;}
 
 }
 #gd{
+	color:purple;
+	font-size:15px;
 	text-decoration:none;
 	position:absolute;
-	amination:title 10s ease infinite;
+	top:2000px;
+	animation:title 4s ease infinite;
+	
 }

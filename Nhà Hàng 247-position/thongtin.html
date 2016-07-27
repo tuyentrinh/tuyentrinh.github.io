@@ -4,7 +4,7 @@
   <title>NHÀ HÀNG 247</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="jquery-3.1.0.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -14,17 +14,24 @@
     <br/><br/>
     <div id="chay" class="main-menu" >
 			<a href="#" class="closebtn" onclick="closeNav()">×</a>
-
-      <a href="index.html"> TRANG TRỦ</a>
-      
-      
-      <a href="gioithieu.html"> GIỚI THIỆU</a>
-      
-      
-      <a href="thongtin.html"> THÔNG TIN</a>
-      
-    </div>
-	<div id="menu" onclick="openNav()">☰ MENU</div>
+			
+			<a href="index.html"> TRANG TRỦ</a>
+			
+			
+			<a href="gioithieu.html" target="blank"> GIỚI THIỆU</a>
+			
+			
+			<a href="thongtin.html" target="blank"> THÔNG TIN</a>
+			
+		</div>
+		<h2><div id="menu" onclick="openNav()">☰ MENU</div></h2>
+		<div id="thucdon">
+			<a href="#">MÓN THỦY SẢN</a>			
+			<a href="#">MÓN DÂN DÃ</a>			
+			<a href="#" target="blank">MÓN MỚI</a>
+			<a href="#" target="blank">MÓN ĐẶC BIỆT</a>			
+		</div>
+		<h2><div id="menu1">☰ THỰC ĐƠN</div></h2>
     <br/><br/>
     <h1>THÔNG TIN NHÀ HÀNG</h1>
     <div class="thongtin">
@@ -42,8 +49,15 @@
 }
 
     function closeNav(){
-    document.getElementById("chay").style.width = "0";
-}
-</script>
+    document.getElementById("chay").style.width = "0";};
+	$(document).ready(function(){
+    $("#menu1").click(function(){
+        $("#thucdon").slideToggle(500);
+    });
+});
+
+</script>	
+<a href="#banner"><div id="lentop"><img src="anh/lentop.png"/></div></a>
+<h2 id="gd">GIÁM ĐỐC @@TUYÊN TRỊNH</h2>
 </body>
 </html>

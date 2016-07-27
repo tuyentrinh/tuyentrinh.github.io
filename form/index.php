@@ -27,7 +27,7 @@ session_start();
     <div class="card"></div>
         <div class="card">
             <div class="toggle"></div>
-            <h1 class="title">Register
+            <h1 class="title">ĐĂNG KÝ
                 <div class="close"></div>
             </h1>
             <form action="check.php" method="post">
