@@ -2,9 +2,16 @@
 h1{
 	text-align: center;
 	margin:auto;
+	animation:head 2s linear infinite;
 	
-	background: orange;
 	font-size:1.5em;
+}
+@keyframes head{
+	0%{bachground-color:#f7a407;}
+	25%{background-color:#1ff707;}
+	50%{background-color:#07f7ed;}
+	75%{background-color:#4f07f7;}
+	100%{background-color:#f70795;}
 }
 .wrap{
 	max-width: 1000px;
@@ -162,7 +169,7 @@ p{
 }
 @keyframes title{
 	from{left:70%;opacity:1;}
-	to {left:40%;opacity:0;}
+	to {left:10%;opacity:0;}
 
 }
 #gd{
@@ -170,7 +177,52 @@ p{
 	font-size:15px;
 	text-decoration:none;
 	position:absolute;
-	top:2000px;
+	top:298px;
 	animation:title 4s ease infinite;
 	
+}
+@keyframes fade {
+        50% {
+            opacity: 0.02;
+        }
+}
+.letter{
+	position:absolute;
+	font-size: 100px;
+    top: 260px;
+    left: 17%;
+    color: white;
+    text-shadow: 0 0 3px purple;
+
+}
+
+span:nth-child(1) {
+        animation: fade 4s infinite 200ms;
+}
+span:nth-child(2) {
+        animation: fade 4s infinite 600ms;
+ }
+span:nth-child(3) {
+        animation: fade 4s infinite 800ms;
+ }
+span:nth-child(4) {
+        animation: fade 4s infinite 1200ms;
+}
+span:nth-child(5) {
+        animation: fade 4s infinite 1600ms;
+}
+span:nth-child(6) {
+        animation: fade 4s infinite 2000ms;
+}
+span:nth-child(7) {
+        animation: fade 4s infinite 2400ms;
+}
+span:nth-child(8) {
+        animation: fade 4s infinite 2800ms;
+}
+span:nth-child(9) {
+        animation: fade 4s infinite 3200ms;
+}
+span:nth-child(10) {
+animation: fade 4s infinite 3600ms;
 }
