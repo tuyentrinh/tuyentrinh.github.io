@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+<title>CALCULATOR</title>
+<meta charset="utf-8"/>
+<style>
+table{
+background-color:purple;
+margin:auto;
+}
+#resulf{
+width:216px;
+height:30px;
+}
+#bang{
+height:62px;
+width:40px;
+}
+#khong{
+width:85px;
+height:30px}
+.btn{
+height:30px;
+width:40px;
+}
+
+
+</style>
+</head>
+<body>
+<table>
+            <tr>
+			<td colspan="5"><input id="resulf" type ="text"/></td>
+			</tr>
+			<tr>
+			<td><input class="btn" type="button" value="7" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="8" onclick="resulf.value+=this.value"/></td>
+            <td><input class="btn" type="button" value="9" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="/" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="<--" onclick="resulf.value=resulf.value.substr(0,resulf.value.length-1)"></td>
+            </tr>
+			<tr>
+			<td><input class="btn" type="button" value="4" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="5" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="6" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="*" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="C" onclick="resulf.value=''"/></td>
+			</tr>
+			<tr>
+			<td><input class="btn" type="button" value="1" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="2" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="3" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="+" onclick="resulf.value+=this.value"/></td>
+			<td rowspan="2"><input id="bang" type="button" value="=" onclick="resulf.value=eval(resulf.value)"/></td>
+			</tr>
+			<tr>
+			<td colspan="2"><input id="khong" type="button" value="0" onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="." onclick="resulf.value+=this.value"/></td>
+			<td><input class="btn" type="button" value="-" onclick="resulf.value+=this.value"/></td>
+			</tr>
+</table>
+</body>
+</html>
