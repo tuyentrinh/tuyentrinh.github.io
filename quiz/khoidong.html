@@ -3,6 +3,7 @@
 <head>
 <title>Luyện tập test</title>
 <meta charset="utf-8"/>
+<script src="jquery-3.1.0.min.js"></script>
 <style>
 body{
 background-image:url('bg.jpg');
@@ -34,7 +35,7 @@ background-color: #32d243;
 background-color:red;
 }
 
-#chuyen{
+#chuyen,.ch{
     font-size: 25px;
     position: absolute;
     top: 650px;
@@ -71,7 +72,7 @@ var x=0;
 <div>
 <button id="but" value="0" onclick="tuyen(this)">Ngày 15/09/1980</button>
 </div>
-<button id="chuyen" onclick="chuyen1()">CHUYỂN CÂU</button>
+<button class="ch">CHUYỂN CÂU</button>
 </div>
 
 <div id="test2">
@@ -88,7 +89,7 @@ var x=0;
 <div>
 <button id="but" value="1" onclick="tuyen(this)">Châu Phi</button>
 </div>
-<button id="chuyen" onclick="chuyen2()">CHUYỂN CÂU</button>
+<button class="ch">CHUYỂN CÂU</button>
 </div>
 </div>
 
@@ -106,7 +107,7 @@ var x=0;
 <div>
 <button id="but" value="1" onclick="tuyen(this)">Ngày 22/04/1970</button>
 </div>
-<button id="chuyen" onclick="chuyen3()">CHUYỂN CÂU</button>
+<button class="ch">CHUYỂN CÂU</button>
 </div>
 
 
@@ -124,7 +125,7 @@ var x=0;
 <div>
 <button id="but" value="0" onclick="tuyen(this)">Thái Cơ</button>
 </div>
-<button id="chuyen" onclick="chuyen4()">CHUYỂN CÂU</button>
+<button class="ch">CHUYỂN CÂU</button>
 </div>
 
 <div id="test5">
@@ -150,25 +151,17 @@ var x=0;
 function tuyen(bien){
 var y=bien.value;
 x =x + +y;
-
 };
+$(document).ready(function(){
+  $(".ch").click(function(){
+   x=$(this).parent();
+  y=x.next();
+   x.css({"display":"none"});
+   y.css({"display":"block"});
 
-function chuyen1(){
-document.getElementById('test2').style.display="block";
-document.getElementById('test1').style.display="none";
-};
-function chuyen2(){
-document.getElementById('test3').style.display="block";
-document.getElementById('test2').style.display="none";
-}
-function chuyen3(){
-document.getElementById('test4').style.display="block";
-document.getElementById('test3').style.display="none";
-}
-function chuyen4(){
-document.getElementById('test5').style.display="block";
-document.getElementById('test4').style.display="none";
-}
+});
+});
+
 function chuyen5(){
 if(x==5){
 window.location.assign("win.html");
