@@ -61,16 +61,12 @@ var x=0;
 <div id="test1">
 <h2>Bác Hồ sinh vào ngày tháng năm nào?</h2>
 <div>
-<button id="but" value="1" onclick="tuyen(this)">Ngày 19/05/1980</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 23/02/1990</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 14/02/1980</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 15/09/1980</button>
 </div>
 <button class="ch">CHUYỂN CÂU</button>
 </div>
@@ -78,16 +74,16 @@ var x=0;
 <div id="test2">
 <h2>Châu lục có diện tích lớn thứ ba thế giới?</h2>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Châu Âu</button>
+<button id="but" onclick="tuyen1(this)">Châu Âu</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Châu Á</button>
+<button id="but" onclick="tuyen1(this)">Châu Á</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Châu Mỹ</button>
+<button id="but" onclick="tuyen1(this)">Châu Mỹ</button>
 </div>
 <div>
-<button id="but" value="1" onclick="tuyen(this)">Châu Phi</button>
+<button id="but" onclick="tuyen1(this)">Châu Phi</button>
 </div>
 <button class="ch">CHUYỂN CÂU</button>
 </div>
@@ -96,16 +92,16 @@ var x=0;
 <div id="test3">
 <h2>Ngày Trái Đất được tổ chức đầu tiên vào ngày nào?</h2>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 19/04/1970</button>
+<button id="but" onclick="tuyen2(this)">Ngày 19/04/1970</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 20/04/1970</button>
+<button id="but" onclick="tuyen2(this)">Ngày 20/04/1970</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Ngày 21/04/1970 </button>
+<button id="but" onclick="tuyen2(this)">Ngày 21/04/1970 </button>
 </div>
 <div>
-<button id="but" value="1" onclick="tuyen(this)">Ngày 22/04/1970</button>
+<button id="but" onclick="tuyen2(this)">Ngày 22/04/1970</button>
 </div>
 <button class="ch">CHUYỂN CÂU</button>
 </div>
@@ -114,16 +110,16 @@ var x=0;
 <div id="test4">
 <h2>Tiến quân ca do nhạc sĩ nào sáng tác?</h2>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Phạm Trọng Cầu</button>
+<button id="but" onclick="tuyen3(this)">Phạm Trọng Cầu</button>
 </div>
 <div>
-<button id="but" value="1" onclick="tuyen(this)">Văn Cao</button>
+<button id="but" onclick="tuyen3(this)">Văn Cao</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Huy Du</button>
+<button id="but" onclick="tuyen3(this)">Huy Du</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Thái Cơ</button>
+<button id="but" onclick="tuyen3(this)">Thái Cơ</button>
 </div>
 <button class="ch">CHUYỂN CÂU</button>
 </div>
@@ -131,27 +127,45 @@ var x=0;
 <div id="test5">
 <h2>Tổng Bí thư đầu tiên của Việt Nam?</h2>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Lê Hồng Phong</button>
+<button id="but" onclick="tuyen4(this)">Lê Hồng Phong</button>
 </div>
 <div>
-<button id="but" value="1" onclick="tuyen(this)">Trần Phú</button>
+<button id="but" onclick="tuyen4(this)">Trần Phú</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Nguyễn Văn Cừ</button>
+<button id="but" onclick="tuyen4(this)">Nguyễn Văn Cừ</button>
 </div>
 <div>
-<button id="but" value="0" onclick="tuyen(this)">Hà Huy Tập</button>
+<button id="but" onclick="tuyen4(this)">Hà Huy Tập</button>
 </div>
 <button id="chuyen" onclick="chuyen5()">KẾT QUẢ</button>
 </div>
 
 </body>
 <script>
-var x=0;
-function tuyen(bien){
-var y=bien.value;
-x =x + +y;
+var z=0;
+function tuyen(x){
+z+=1;
 };
+};
+function tuyen1(x){
+if(x.innerText=="Châu Phi"){
+z+=1;
+};
+};
+function tuyen2(x){
+if(x.innerText=="Ngày 22/04/1970"){
+z+=1;
+};
+};
+function tuyen3(x){
+if(x.innerText=="Văn Cao"){
+z+=1;
+};};
+function tuyen4(x){
+if(x.innerText=="Trần Phú"){
+z+=1;
+};};
 $(document).ready(function(){
   $(".ch").click(function(){
    x=$(this).parent();
@@ -163,7 +177,7 @@ $(document).ready(function(){
 });
 
 function chuyen5(){
-if(x==5){
+if(z==5){
 window.location.assign("win.html");
 }else{
 window.location.assign("lose.html");
