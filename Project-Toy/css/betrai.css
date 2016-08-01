@@ -1,0 +1,21 @@
+.seemore-abso, .seemore-abso-1, .seemore-abso-2{
+	position:absolute;
+	display: none;
+}
+.seemore-block{
+	display: block !important;
+}
+/*.see-more {
+	position: absolute;
+	border: 1px dashed red;
+	margin: auto;
+}*/
+.see-more a {
+	text-align: center;
+}
+.seemore{
+	position: relative;
+}
+.see {
+	text-align: center;
+}

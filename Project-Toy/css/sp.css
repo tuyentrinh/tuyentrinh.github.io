@@ -1,0 +1,103 @@
+/*.box {
+	width: 100%;
+    clear: both;
+    background: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.pull-right {
+	float: right;
+    padding-left: 10px;
+}
+.box-heading {
+	background-color: #0a0a0a;
+    padding: 9px 20px 8px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+*/
+
+#detail-block {
+	float: left;
+    width: 100%;
+}
+/*video*/
+#danhgiavabinhluan legend {
+    display: inline-block; 
+    margin-left: 30px;
+    padding: 10px;
+    width: auto;
+    margin-bottom: 20px; 
+    font-size: 21px; 
+    line-height: inherit; 
+    color: #333; 
+    border: 0; 
+    border-bottom: 1px solid #e5e5e5;
+}
+#danhgiavabinhluan label,#danhgiavabinhluan input,#danhgiavabinhluan textarea{
+    
+    margin-left:20px;
+}
+#danhgiavabinhluan input,#danhgiavabinhluan textarea{
+    width: 90%;
+    display: block;
+    margin:0 auto;
+    line-height: 35px;
+    font-size: 20px;
+}
+#danhgiavabinhluan textarea{
+    margin-bottom: 20px;
+}
+
+/*table*/
+
+#rating input{
+    width: auto !important;
+    text-align: center;
+}
+#rating th{
+    color: white;
+    background: rgba(47, 55, 66, 0.77);
+}
+.rating{
+    width: 90%;
+    margin:20px auto;
+}
+.rating,.rating th,td,tr {
+    border:1px solid #BE3841;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.w-left{
+    width: 50%;
+}
+.w-right{
+    width: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text-left{
+    padding-left: 30px; 
+    font-size: 18px;
+}
+.cothebanquantam{
+    margin-top: 30px;
+    font-size: 25px;
+    color: #BE3841;
+}
+.cothebanquantam hr{
+    margin-top:7px;
+}
+
+
+/*san pham lien quan*/
+.batdausanphamphanloai-trangcon{
+    width: 60%;
+    margin: 0 auto;
+
+
+    
+}

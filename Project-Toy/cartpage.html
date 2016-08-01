@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noodp,noydir" >
+	<meta name="keywords" content="LUONG PHAM" >
+	<meta name="description" content="LUONG PHAM" >
+	<meta name="author" content="LUONG PHAM" >
+	<meta name="copyright" content="LUONG PHAM" >
+	<meta name="page-topic" content="LUONG PHAM" >        
+	<title>Cart Page - Toy Project</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="include/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="include/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/betrai.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body class="container">
+	<div class="container">
+		<header id="header">
+			<!-- bat dau dang ky -->
+			<div>
+				<!-- logo -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="nav navbar-nav navbar-left logo" id="logo">
+						<a href="index.html"><img src="img/Bitmap.png" style="width:68px;height:50px;"></a>
+					</div>
+				</div>
+				<!-- End logo -->
+				<!-- link login -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<ul class="nav navbar-nav navbar-right register">
+						<li> <a data-toggle="modal" href="#registerModal"> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Đăng kí</a></li>
+						<li><a data-toggle="modal" href="#loginModal"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Đăng nhập</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-shopping glyphicon-shopping-cart"></span> Cart 1</a></li>
+					</ul>
+				</div>
+				<!-- End link login -->
+			</div>
+			<!-- ket thuc dang ky -->
+			<div class="clear"></div>
+			<div>
+				<div class="clear"></div>
+				<nav class="navbar  navbar-inverse">
+					<div class="container-flsuid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<!-- Home -->
+								<li><a href="index.html" class="dropdown-toggle"><span class="glyphicon glyphicon-home"></span></a></li>
+								<!-- end home -->
+
+								<li><a class="dropdown-toggle" data-toggle="dropdown" href="#" class="drop-color-a">Sản Phẩm<span class="caret"></span></a>
+									<ul id="ul1" class="dropdown-menu">
+										<li><a href="betrai.html" class="drop-color-a">Bé trai</a></li>
+										<li><a href="begai.html" class="drop-color-a">Bé gái</a></li>
+										<li><a href="#" class="drop-color-a">Mô hình</a></li>
+										<li><a href="#" class="drop-color-a">Máy móc - Thiết bị</a></li>
+										<li><a href="#" class="drop-color-a">Búp bê</a></li>
+										<li><a href="#" class="drop-color-a">Đồ chơi ngoài trời</a></li>
+										<li><a href="#" class="drop-color-a">abc</a></li>
+										<li><a href="#" class="drop-color-a">abc</a></li>
+									</ul>
+								</li>
+								<!-- End Sản phẩm -->
+
+								<!-- Theo độ tuổi -->
+								<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Độ tuổi <span class="caret"></span></a>
+									<ul id="ul2" class="dropdown-menu">
+										<li><a href="2-6.html" class="drop-color-a">2-6 Tuổi</a></li>
+										<li><a href="7-12.html" class="drop-color-a">7-12 Tuổi</a></li>
+										<li><a href="12-16.html" class="drop-color-a">12-16 Tuổi</a></li>
+									</ul>
+									<!-- End Theo độ tuổi -->
+
+									<!--Theo giá  -->
+									<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Giá <span class="caret"></span></a>		
+										<ul id="ul3" class="dropdown-menu">
+											<li><a href="index.html" class="drop-color-a">0-5$</a></li>
+											<li><a href="index.html" class="drop-color-a">5-10$</a></li>
+											<li><a href="index.html" class="drop-color-a">10-50$</a></li>
+											<li><a href="index.html" class="drop-color-a">50-100$</a></li>
+											<li><a href="index.html" class="drop-color-a">100-150$</a></li>
+											<li><a href="index.html" class="drop-color-a">150-200$</a></li>
+											<li><a href="index.html" class="drop-color-a">200-250$</a></li>
+											<li><a href="index.html" class="drop-color-a">250$+</a></li>
+										</ul>
+									</li>
+									<!-- End theo giá -->
+									<!-- Thương hiệu -->
+									<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Brand <span class="caret"></span></a>	
+										<ul id="ul4" class="dropdown-menu">
+											<li><a href="index.html" class="drop-color-a">Lego</a></li>
+											<li><a href="index.html" class="drop-color-a">4M</a></li>
+											<li><a href="index.html" class="drop-color-a">AquaPlay</a></li>
+											<li><a href="index.html" class="drop-color-a">Beanie</a></li>
+											<li><a href="index.html" class="drop-color-a">HappyPolla</a></li>
+											<li><a href="index.html" class="drop-color-a">Buuny</a></li>
+											<li><a href="index.html" class="drop-color-a">Trúc Bạch</a></li>
+											<li><a href="index.html" class="drop-color-a">Honda</a></li>
+										</ul>	
+									</li>
+									<!-- End Thương hiệu -->
+									<!-- Khuyến Mãi -->
+									<li>
+										<a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="index.html">Khuyến Mãi<span class="caret"></span></a>
+										<ul id="ul5" class="dropdown-menu">
+											<li><a href="index.html" class="drop-color-a">Thông Tin Khuyến Mãi</a></li>
+											<li><a href="index.html" class="drop-color-a">Khuyến Mãi Giờ Vàng</a></li>
+										</ul>
+									</li>
+									<!-- end Khuyến Mãi -->
+
+									<!-- <li><a href="#" class="drop-color-a">Liên Hệ</a></li> -->
+								</ul>
+
+								<form class="navbar-form navbar-right" role="search">
+									<div class="form-group">
+										<input type="text" class="form-control" minlength="50" placeholder="Search" style="width:300px;">
+									</div>
+									<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search">
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<section>
+			<!-------------------- Cart ---------------->
+			<div class="cart-page  col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="row">
+					<div class="bread-crumd">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="begai.html">Thanh toán</a></li>
+						</ol>
+					</div>
+				</div>
+				<div class="order-info cart-page-item">
+					<h1>My Cart</h1>
+					<form id="cartForm" method="post" action="">
+						<fieldset>
+							<table id="shopping-cart-table" class="data-table cart-table">
+								
+								<thead>
+									<tr class="first last">
+										<th rowspan="1">&nbsp
+										</th>
+										<th rowspan="1">&nbsp
+										</th>
+										<th rowspan="1" width="100%" >
+											<span class="nobr">Sản phẩm
+											</span>
+										</th>
+										<!-- <th rowspan="1"></th> -->
+										<th colspan="1" class="a-center">
+											<span class="nobr">Giá tiền
+											</span>
+										</th>
+										<th rowspan="1" class="a-center">Số lượng
+										</th>
+										<th rowspan="1" class="a-center">Tổng tiền
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="first last odd">
+										<td>
+											<a href="index.html" title="Remove item" class="btn-remove btn-remove2" style="text-decoration:none;">			
+												<span style="text-decoration:none;">Remove item</span>
+											</a>
+										</td>
+										<td>
+											<a href="sp1.html" class="produc-img" title="">
+												<img src="img/nu-hoang-elsa-du-tiec3.jpg" width="75" height="75" alt="nu hoang elsa">
+											</a>
+										</td>
+										<td>
+											<h2 class="product-name">
+												<a href="sp1.html">nu-hoang-elsa-du-tiec
+												</a>
+											</h2>
+										</td>
+										<td>
+											<span class="cart-price">
+												<span class="price">9.99
+												</span>
+											</span>
+										</td>
+										<td class="a-center">
+											<input type="number" name="cart[]" value="1" size="1" title="So luong" maxlength="12" onclick="this.value">
+											<a href="sp1.html" name="update_cart_action" value="uodate_soluong">Sua
+											</a>
+										</td>
+										<td class="last">
+											<span class="cart-price">
+												<span class="price">9.99
+												</span>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</fieldset>
+					</form>
+				</div>
+				<div class="cart-page-item order-check">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col1-set left ">
+						<div class="buttons-cart ">
+							<button type="button" title="tiep tuc" class="button btn btn-continue gray" onclick="setlocation("index.html")>
+								<span>
+									<a href="index.html"><span>Tiep tuc</span></a>
+								</span>
+							</button>
+							<button type="button" title="cap nhat" class="button btn btn-update gray" value="update_soluong" onclick="">
+								<span>
+									<span>Cap nhat</span>
+								</span>
+							</button>
+						</div>
+						<div class="discount">
+							<h2>Phiếu giảm giá</h2>
+							<form id="discount-coupon-form" action="" method="post">
+								<fieldset>
+									<label for="coupon_code">Nhập phiếu giảm giá</label>
+									<input type="text" name="coupon_code" id="coupon_code" class="input-text">
+									<button class="button btn gray" onclick="" type="button" value="">
+										<span>
+											<span>
+												Nhap phiếu
+											</span>
+										</span>
+									</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col2-set right" > 
+						<div class="totals">
+							<fieldset>
+								<table id="shopping-cart-totals-table">
+									<tbody>
+										<tr>
+											<td>
+												<strong>
+													<span>Tổng tiền</span>
+												</strong>
+											</td>
+											<td>
+												<strong>
+													<span class="price"> 649.000đ</span>
+												</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<strong>
+													<span>Phí vận chuyển</span>
+												</strong>
+											</td>
+											<td>
+												<strong>
+													<span class="price"> 0</span>
+												</strong>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td>
+												<strong>
+													<span>Tổng cộng</span>
+												</strong>
+											</td>
+											<td>
+												<strong>
+													<span class="price">649.000</span>
+												</strong>
+											</td>
+										</tr>
+									</tfoot>
+									
+								</table>
+								<ul class="checkout-types">
+									<li>
+										<button type="button" title="Proceed to Checkout" class="button btn-checkout btn-lg" onclick="">
+											<span>
+												<span >Thanh toan</span>
+											</span>
+										</button>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+				<!-- -------------------------------------------- -->
+				<!-- bat dau product -->
+				<div class="products" style="    width: 100%;">
+					<!-- --------------------------------------------- -->
+					<!-- SP tuong tu -->
+					<div class="new-products home-prod-cont homepage-playtoday category-products">
+						<!-- tieu de SP moi -->
+						<div class="block-title-bg box-heading clearfix">
+							<h2>Sản phẩm cùng loại </h2>
+						</div>
+						<!-- ke thuc tieu de SP moi -->
+
+						<div class="products-gird">
+							<!-- ------------------SP1------------------ -->
+							<div class="col-md-3 col-sm-6 col-xs-12 products item well">
+								<!-- thong tin sp 1 -->
+								<div class="info-product">
+									<!-- anh sp -->
+									<div class="img-product img-img">
+										<a href="sp1.html"><img src="img/nu-hoang-elsa-du-tiec1.jpg" class="img-responsive" alt="nu-hoang-elsa-du-tiec"></a>
+										<span class="info-hover animated fadeInUp"></span>
+									</div>
+									<!-- ket thuc anh sp -->
+									<!-- thong so sp -->
+									<div class="hover-detail-img">
+										<h4>Nữ hoàng Elsa</h4>
+										<p>MSP: LG35621</p>
+									</div>
+									<!-- ket thuc thong so sp  -->
+									<!-- gia sp -->
+									<div class="price-label-box" style="clear:both;">
+										<div class="label-prodlist left">
+											<span class="pic-label top-right"  >
+												<img src="img/newtim.png" alt="New"/>
+											</span>					
+										</div>
+										<div class="price-box-right right">
+											<div class="price-box">
+												<p class="only">
+													<span>Only</span>
+												</p>
+												<span class="regular-price" id="product-price-15969">
+													<span class="price">649.000đ</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<!-- ket thuc gia sp -->
+								</div>
+								<!-- ket thuc thong tin sp 1 -->
+								<!-- dat mua sp -->
+								<div class="actions">
+									<button type="button" title="Add to Cart" class="button btn-lg btn-cart prodlist-btn big" onclick="setLocation()"> 
+										<a href="cartpage.html">
+											<span class="ic-cart glyphicon glyphicon-shopping-cart">
+												Thêm vào giỏ	
+											</span>
+										</a>
+									</button>
+								</div>
+								<!-- ket thuc dat mua sp -->
+							</div>
+							<!-- ket thuc SP 1 -->
+
+							<!------------------------ SP 2----------------- -->
+							<div class="col-md-3 col-sm-6 col-xs-12 products item well">
+								<!-- thong tin sp 2 -->
+								<div class="info-product">
+									<!-- anh sp -->
+									<div class="img-product">
+										<a href="#"><img src="img/phi-thuyen-chien-dau1.jpg" class="img-responsive"></a>
+										<span class="info-hover animated fadeInUp">Chi tiết sản phẩm:</span>
+									</div>
+									<!-- ket thuc anh sp -->
+									<!-- thong so sp -->
+									<div class="hover-detail-img">
+										<h4>Phi thuyền chiến đấu</h4>
+										<p>MSP: 846321</p>
+									</div>
+									<!-- ket thuc thong so sp  -->
+									<!-- gia sp -->
+									<div class="price-label-box" style="clear:both;">
+										<div class="label-prodlist left">
+											<span class="pic-label top-right"  >
+												<img src="img/newtim.png" alt="New"/>
+											</span>					
+										</div>
+										<div class="price-box-right right">
+											<div class="price-box">
+												<p class="only">
+													<span>Only</span>
+												</p>
+												<span class="regular-price" id="product-price-15969">
+													<span class="price">2.500.000đ</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<!-- ket thuc gia sp -->
+								</div>
+								<!-- ket thuc thong tin sp 2 -->
+								<!-- dat mua sp -->
+								<div class="actions">
+									<button type="button" title="Add to Cart" class="button btn-lg btn-cart prodlist-btn big" onclick="setLocation()"> 
+										<a href="cartpage.html">
+											<span class="ic-cart glyphicon glyphicon-shopping-cart">
+												Thêm vào giỏ	
+											</span>
+										</a>
+									</button>
+								</div>
+								<!-- ket thuc dat mua sp -->
+							</div>
+							<!-- ket thuc SP 2 -->
+
+							<!-- -----------------------SP 3------------------- -->
+							<div class="col-md-3 col-sm-6 col-xs-12 products item well">
+								<!-- thong tin sp 3 -->
+								<div class="info-product">
+									<!-- anh sp -->
+									<div class="img-product">
+										<a href="#"><img src="img/xeben1.jpg" class="img-responsive"></a>
+										<span class="info-hover animated fadeInUp">Chi tiết sản phẩm:</span>
+									</div>
+									<!-- ket thuc anh sp -->
+									<!-- thong so sp -->
+									<div class="hover-detail-img">
+										<h4>Xe ben</h4>
+										<p>MSP: 368153</p>
+									</div>
+									<!-- ket thuc thong so sp  -->
+									<!-- gia sp -->
+									<div class="price-label-box" style="clear:both;">
+										<div class="label-prodlist left">
+											<span class="pic-label top-right"  >
+												<img src="img/newtim.png" alt="New"/>
+											</span>					
+										</div>
+										<div class="price-box-right right">
+											<div class="price-box">
+												<p class="only">
+													<span>Only</span>
+												</p>
+												<span class="regular-price" id="product-price-15969">
+													<span class="price">399.000đ</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<!-- ket thuc gia sp -->
+								</div>
+								<!-- ket thuc thong tin sp 3 -->
+								<!-- dat mua sp -->
+								<div class="actions">
+									<button type="button" title="Add to Cart" class="button btn-lg btn-cart prodlist-btn big" onclick="setLocation()"> 
+										<a href="cartpage.html">
+											<span class="ic-cart glyphicon glyphicon-shopping-cart">
+												Thêm vào giỏ	
+											</span>
+										</a>
+									</button>
+								</div>
+								<!-- ket thuc dat mua sp -->
+							</div>
+							<!-- ket thuc SP 3 -->
+
+							<!-------------------------- SP 4------------------------ -->
+							<div class="col-md-3 col-sm-6 col-xs-12 products item well">
+								<!-- thong tin sp 4 -->
+								<div class="info-product">
+									<!-- anh sp -->
+									<div class="img-product">
+										<a href="#"><img src="img/phung-hoang-than-lua1.jpg" class="img-responsive"></a>
+										<span class="info-hover animated fadeInUp">Chi tiết sản phẩm:</span>
+									</div>
+									<!-- ket thuc anh sp -->
+									<!-- thong so sp -->
+									<div class="hover-detail-img">
+										<h4>Phượng hoàng thần lửa</h4>
+										<p>MSP: 684532</p>
+									</div>
+									<!-- ket thuc thong so sp  -->
+									<!-- gia sp -->
+									<div class="price-label-box" style="clear:both;">
+										<div class="label-prodlist left">
+											<span class="pic-label top-right"  >
+												<img src="img/newtim.png" alt="New"/>
+											</span>					
+										</div>
+										<div class="price-box-right right">
+											<div class="price-box">
+												<p class="only">
+													<span>Only</span>
+												</p>
+												<span class="regular-price" id="product-price-15969">
+													<span class="price">259.000đ</span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<!-- ket thuc gia sp -->
+								</div>
+								<!-- ket thuc thong tin sp 4 -->
+								<!-- dat mua sp -->
+								<div class="actions">
+									<button type="button" title="Add to Cart" class="button btn-lg btn-cart prodlist-btn big" onclick="setLocation()"> 
+										<a href="cartpage.html">
+											<span class="ic-cart glyphicon glyphicon-shopping-cart">
+												Thêm vào giỏ	
+											</span>
+										</a>
+									</button>
+								</div>
+								<!-- ket thuc dat mua sp -->
+							</div>
+							<!-- ket thuc SP 4 -->
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- ket thuc content -->
+			<!-- footer -->
+			<footer class="footer-distributed" style="background:/*#1F394B*/ #6ECABC;padding: 10px">
+
+				<div class="footer-left">
+
+					<span><img src="img/bitmap.png"></span>
+
+					<p class="footer-links">
+						<a href="index.html">Trang chủ</a>
+						·
+						<a href="https://www.facebook.com/acekuto">Blog</a>
+						·
+						<a href="index.html">Pricing</a>
+						·
+						<a href="index.html">About</a>
+						·
+						<a href="index.html">Faq</a>
+						·
+						<a href="index.html">Contact</a>
+					</p>
+
+					<p class="footer-company-name">Toy Store &copy; 2016</p>
+				</div>
+
+				<div class="footer-center">
+
+					<div>
+						<i class="fa fa-map-marker"></i>
+						<p><span>125C Minh Khai</span> Hà Nội, Việt Nam</p>
+					</div>
+
+					<div>
+						<i class="fa fa-phone"></i>
+						<p>+1 555 123456</p>
+					</div>
+
+					<div>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:support@company.com">support@toystore.com</a></p>
+					</div>
+
+				</div>
+
+				<div class="footer-right">
+
+					<p class="footer-company-about">
+						<span>Toy Store</span>
+						Tất cả vì tương lai con em chúng ta, kệ tương lại con em chúng nó
+					</p>
+
+					<div class="footer-icons">
+
+						<a href="https://www.facebook.com/acekuto"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.facebook.com/acekuto"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.facebook.com/acekuto"><i class="fa fa-linkedin"></i></a>
+						<a href="https://github.com/luongpham1990/luongpham1990.github.io"><i class="fa fa-github"></i></a>
+
+					</div>
+
+				</div>
+
+			</footer>
+			<!-- ket thuc footer -->
+		</div>
+		<div class="back-to-top" id="back-top">
+			<a href="#logo">
+				<img src="img/back-to-top2.png" title="backtop" alt="backtop">
+			</a>
+
+		</div>
+
+		<!-- Modal Sign Up -->
+		<div class="modal fade" id="registerModal" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header" style="padding:35px 50px;">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4><span class="glyphicon glyphicon-lock"></span> Đăng ký</h4>
+					</div>
+					<div class="modal-body" style="padding:40px 50px;">
+						<form role="form">
+							<div class="form-group">
+								<label for="usrname"><span class="glyphicon glyphicon-user"></span> Tên đăng nhập</label>
+								<input type="text" class="form-control" id="usrname" placeholder="Email / Tên đăng nhập">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Mật khẩu</label>
+								<input type="password" class="form-control" id="psw" placeholder="Enter password">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Nhập lại mật khẩu</label>
+								<input type="password" class="form-control" id="psw" placeholder="Repeat Enter password">
+							</div>
+							<div class="form-group">
+								<label for="psw"><span class="glyphicon glyphicon-envelope"></span>Nhập mail</label>
+								<input type="text" class="form-control" id="email" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label for="dienthoai"><span class="glyphicon glyphicon-earphone"></span>
+									Điện thoại</label>
+									<input type="text" class="form-control"  name="dienthoai" id="dienthoai" placeholder="Điện thoại"/>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="" checked>Tôi đồng ý với điều khoản </label>
+								</div>
+								<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Đăng ký</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<p>Not a member? <a href="#">Sign Up</a></p>
+							<p>Forgot <a href="#">Password?</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal Login -->
+			<div class="modal fade" id="loginModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding:35px 50px;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span> Đăng nhập</h4>
+						</div>
+						<div class="modal-body" style="padding:40px 50px;">
+							<form role="form">
+								<div class="form-group">
+									<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+									<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+									<input type="text" class="form-control" id="psw" placeholder="Enter password">
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="" checked>Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<p>Not a member? <a href="#">Sign Up</a></p>
+							<p>Forgot <a href="#">Password?</a></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			$('#dmtien').click(function(){
+				$('.seemore-abso').toggleClass('seemore-block');
+
+				$('html,body').animate({
+					scrollTop: $("#dmtien").offset().top},
+					800);
+			});
+			$('#seemore1').click(function(){
+				$('.seemore-abso-1').toggleClass('seemore-block');
+
+				$('html,body').animate({
+					scrollTop: $("#seemore1").offset().top},
+					800);
+			});
+			$('#seemore2').click(function(){
+				$('.seemore-abso-2').toggleClass('seemore-block');
+
+				$('html,body').animate({
+					scrollTop: $("#seemore2").offset().top},
+					800);
+			});
+	// var xemthem = document.getElementsByClassName("bb");
+	$(document).ready(function(){
+		$("#myBtn").click(function(){
+			$("#registerModal").modal();
+		});
+	});
+	$(document).ready(function(){
+		$("#myBtn").click(function(){
+			$("#loginModal").modal();
+		});
+	});
+	<!-- <script>
+	$(document).ready(function(){
+		$("#li1").hover(function(){
+			$("#ul1").slideToggle("fast");
+		});
+	});
+</script> -->
+</body>

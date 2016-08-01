@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noodp,noydir" >
+	<meta name="keywords" content="LUONG PHAM" >
+	<meta name="description" content="LUONG PHAM" >
+	<meta name="author" content="LUONG PHAM" >
+	<meta name="copyright" content="LUONG PHAM" >
+	<meta name="page-topic" content="LUONG PHAM" >        
+	<title>Công chúa Esla - Toy Project</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="include/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="include/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="css/sp.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/betrai.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<!-- bat dau dang ky -->
+			<div>
+				<!-- logo -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="nav navbar-nav navbar-left logo" id="logo">
+						<a href="#"><img src="img/Bitmap.png" style="width:68px;height:50px;"></a>
+					</div>
+				</div>
+				<!-- End logo -->
+				<!-- link login -->
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<ul class="nav navbar-nav navbar-right register">
+						<li> <a data-toggle="modal" href="#registerModal"> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Đăng kí</a></li>
+						<li><a data-toggle="modal" href="#loginModal"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Đăng nhập</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart 0</a></li>
+					</ul>
+				</div>
+				<!-- End link login -->
+			</div>
+			<!-- ket thuc dang ky -->
+			<div class="clear"></div>
+			<div>
+				<div class="clear"></div>
+				<nav class="navbar  navbar-inverse">
+					<div class="container-flsuid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<!-- Home -->
+								<li><a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-home"></span></a></li>
+								<!-- end home -->
+
+								<li><a class="dropdown-toggle" data-toggle="dropdown" href="#" class="drop-color-a">Sản Phẩm<span class="caret"></span></a>
+									<ul id="ul1" class="dropdown-menu">
+										<li><a href="betrai.html" class="drop-color-a">Bé trai</a></li>
+										<li><a href="begai.html" class="drop-color-a">Bé gái</a></li>
+										<li><a href="#" class="drop-color-a">Mô hình</a></li>
+										<li><a href="#" class="drop-color-a">Máy móc - Thiết bị</a></li>
+										<li><a href="#" class="drop-color-a">Búp bê</a></li>
+										<li><a href="#" class="drop-color-a">Đồ chơi ngoài trời</a></li>
+										<li><a href="#" class="drop-color-a">abc</a></li>
+										<li><a href="#" class="drop-color-a">abc</a></li>
+									</ul>
+								</li>
+								<!-- End Sản phẩm -->
+
+								<!-- Theo độ tuổi -->
+								<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Độ tuổi <span class="caret"></span></a>
+									<ul id="ul2" class="dropdown-menu">
+										<li><a href="2-6.html" class="drop-color-a">2-6 Tuổi</a></li>
+										<li><a href="7-12.html" class="drop-color-a">7-12 Tuổi</a></li>
+										<li><a href="12-16.html" class="drop-color-a">12-16 Tuổi</a></li>
+									</ul>
+									<!-- End Theo độ tuổi -->
+
+									<!--Theo giá  -->
+									<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Giá <span class="caret"></span></a>		
+										<ul id="ul3" class="dropdown-menu">
+											<li><a href="index.html" class="drop-color-a">0-5$</a></li>
+											<li><a href="index.html" class="drop-color-a">5-10$</a></li>
+											<li><a href="index.html" class="drop-color-a">10-50$</a></li>
+											<li><a href="index.html" class="drop-color-a">50-100$</a></li>
+											<li><a href="index.html" class="drop-color-a">100-150$</a></li>
+											<li><a href="index.html" class="drop-color-a">150-200$</a></li>
+											<li><a href="index.html" class="drop-color-a">200-250$</a></li>
+											<li><a href="index.html" class="drop-color-a">250$+</a></li>
+										</ul>
+									</li>
+									<!-- End theo giá -->
+									<!-- Thương hiệu -->
+									<li> <a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#" >Brand <span class="caret"></span></a>	
+										<ul id="ul4" class="dropdown-menu">
+											<li><a href="index.html" class="drop-color-a">Lego</a></li>
+											<li><a href="index.html" class="drop-color-a">4M</a></li>
+											<li><a href="index.html" class="drop-color-a">AquaPlay</a></li>
+											<li><a href="index.html" class="drop-color-a">Beanie</a></li>
+											<li><a href="index.html" class="drop-color-a">HappyPolla</a></li>
+											<li><a href="index.html" class="drop-color-a">Buuny</a></li>
+											<li><a href="index.html" class="drop-color-a">Trúc Bạch</a></li>
+											<li><a href="index.html" class="drop-color-a">Honda</a></li>
+										</ul>	
+									</li>
+									<!-- End Thương hiệu -->
+									<!-- Khuyến Mãi -->
+									<li>
+										<a class="dropdown-toggle drop-color-a" data-toggle="dropdown" href="#">Khuyến Mãi<span class="caret"></span></a>
+										<ul id="ul5" class="dropdown-menu">
+											<li><a href="#" class="drop-color-a">Thông Tin Khuyến Mãi</a></li>
+											<li><a href="#" class="drop-color-a">Khuyến Mãi Giờ Vàng</a></li>
+										</ul>
+									</li>
+									<!-- end Khuyến Mãi -->
+
+									<!-- <li><a href="#" class="drop-color-a">Liên Hệ</a></li> -->
+								</ul>
+
+								<form class="navbar-form navbar-right" role="search">
+									<div class="form-group">
+										<input type="text" class="form-control" minlength="50" placeholder="Search" style="width:300px;">
+									</div>
+									<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search">
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<section>
+			<!-- -------------------------------------------- -->
+			<!-- bat dau slider -->
+			<!-- ket thuc slider -->
+
+
+
+
+			<!-- -------------------------------------------- -->
+			<!-- bat dau baner sale -->
+			<div>
+				<div class="baner-sale">
+					<img src="img/baner-sale.jpg">
+				</div>
+			</div>
+			<!-- ket thuc baner sale -->
+
+
+
+			<!-- -------------------------------------------- -->
+			<div>
+				<div class="row">
+					<div class="bread-crumd">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="betrai.html">Bé Trai</a></li>
+							<li><a href="sp1.html">Công chúa Esla</a></li>
+						</ol>
+					</div>
+				</div>
+				<!-- bắt đầu thông tin chi tiết cho từng sản phẩm -->
+				<div class="thongtinchitietchotungsanpham">
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 anhsanpham">
+						<img src="img/phi-thuyen-chien-dau1.jpg" alt="Phi thuyền chiến đấu" class="img-responsive">
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+						<!-- thong tin san pham -->
+						<div class="thongtin-sanpham">
+							<h1 class="product-name">Phi thuyền chiến đấu</h1>
+							<p>Thương hiệu: Baby Doll</p>
+							<p class="forsale">Trong kho: <a>Sẵn hàng</a> </p>
+							<div class="cangiua">
+								<h4 class="price" style="display:inline">2.500.000₫</h4>
+								<div class="actions">
+
+									<button type="button" title="Add to Cart" class="button btn-lg btn-cart prodlist-btn big" onclick="setLocation()" style="width:30%;"> 
+										<a href="cartpage.html">
+											<span class="ic-cart glyphicon glyphicon-shopping-cart">
+												Thêm vào giỏ	
+											</span>
+										</a>
+									</button>
+
+
+								</div>
+							</div>
+							<hr style="border:1px solid black;">
+						</div>
+						<!-- end thông tin sản phẩm -->
+
+						<!-- thông tin chi tiết của sản phẩm và video -->
+						<div class="thongtin-chitiet panel panel-success">
+							<h4>Hỗ trợ bán hàng:</h4>
+							<div class="hethongcuahang">
+								<dl>
+									<dt>Toy store</dt>
+									<dd>- 125C Minh Khai</dd>
+									<dd>- phòng 304</dd>
+								</dl>
+							</div>
+						</div>
+
+						<!-- end thông tin chi tiết sp và video -->
+					</div>
+
+
+					<!-- làm thông tin kĩ thuạt và video -->
+					<ul class="nav nav-tabs size-nav">
+						<li class="active"><a data-toggle="pill" href="#gioithieu">Giới thiệu</a></li>
+						<li><a data-toggle="pill" href="#thongtinsanpham">Video hướng dẫn</a></li>
+						<li><a data-toggle="pill" href="#danhgiavabinhluan">Đánh giá &amp; Bình luận</a></li>
+					</ul>
+
+
+					<div class="tab-content fontchonavtabs">
+						<!-- gioithieu -->
+						<div id="gioithieu" class="tab-pane fade in active">
+							<h3>Giới Thiệu</h3>
+							<p>Giới thiệu
+
+								Elsa là nhân vật chính trong bộ phim hoạt hình Frozen - Nữ hoàng băng giá. Cô là nữ hoàng của vương quốc Arendelle xinh đẹp, mang trong mình phong thái bình tĩnh, kín đáo, tao nhã và vương giả. Nhưng từ khi sức mạnh băng giá của mình suýt làm hại Anna, nữ hoàng Elsa dẫn trở nên lạnh lùng và quyết định tránh xa mọi người. Nhưng cuối cùng, nhờ tình yêu thương chân thành và mãnh liệt của Anna dành cho chị gái, Elsa đã kiểm soát được sức mạnh của mình và trở lại làm nữ hoàng cai trị vương quốc Arendelle. 
+								<!-- <span class="gioithieu-anh"><img src="img/nu-hoang-elsa-du-tiec1.jpg" alt="Nữ hoàng Elsa" class="img-responsive"></span> -->
+							</p>
+
+							<h3>Đặc điểm tính năng nổi bật của sản phẩm:</h3>
+
+							<p>
+								Sản phẩm gồm 1 búp bê cơ bản cao 30cm với 2 trang phục đính kèm để thay đổi. Búp bê có thể cử động tay và chân một cách linh hoạt với các khớp ở cổ tay, khuỷu tay và đầu gối. 
+							</p>
+
+								<!-- <h3>Lý do ba mẹ nên lựa chọn sản phẩm:</h3>
+								<ul>
+									<li>Trẻ có thể học cách nhận biết màu sắc và các bộ phận của chú ếch, tập cho bé tính kiên nhẫn khi câu cũng như sắp xếp các chú ếch vào hồ sau khi câu </li>
+									<li>Khi các chú ếch đang ở trong hồ nước, bé cần dùng cần câu để câu chính xác các chú ếch ra khỏi mặt hồ</li>
+									<li>Bộ câu ếch xanh Winwintoys 65362 rèn luyện cho bé kỹ năng khéo léo, linh hoạt và chính xác trong khi chơi </li>
+									<li>Ba mẹ có thể tham khảo các sản phẩm đồ chơi gỗ khác cho bé <a>tại đây.</a> </li>
+								</ul>			 -->
+
+							</div>
+							<!-- end gioi thieu -->
+
+							<!-- thong tin san pham -->
+							<div id="thongtinsanpham" class="tab-pane fade">
+								<h3>Xem hướng dẫn tại đây</h3>
+
+								<div class="embed-responsive embed-responsive-16by9 pad-embed">
+									<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3eZ6oKjvGlU" frameborder="0" allowfullscreen> </iframe>
+								</div>
+
+							</div>
+							<!-- end thong tin san pham -->
+
+							<!-- danh gia va binh luan -->
+							<div id="danhgiavabinhluan" class="tab-pane fade">
+								<p>
+									Đánh giá: Nữ hoàng Elsa dự tiệc</p><br>
+
+									<form action="">
+										<fieldset style="border:1px solid black;">
+											<legend>Bình luận tại đây</legend></br>
+
+											<label for="hoten">Họ tên (*):</label> </br>
+											<input type="text" required="required" id="hoten" name="hoten" placeholder="nguyễn văn a"><br>
+
+											<label for="tieude">Tiêu đề(*)</label></br>
+											<input type="text" id="tieude" name="tieude" required="required" placeholder="tiêu đề cần bình luận"></br>
+
+											<label for="noidung">Nội dung</label><br>
+											<textarea id="noidung" name="noidung" cols="5" rows="3" placeholder="bình luận tại đây" style="width:90%;"></textarea>
+
+											<label for="">Cho điểm sản phẩm này</label></br>
+
+
+											<table class="rating" id="rating">
+												<!-- dòng 1 -->
+												<tr>
+													<th class="w-left"><span class="glyphicon glyphicon-star-empty"></span></th>
+													<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 1 sao</th>
+													<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 2 sao</th>
+													<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 3 sao</th>
+													<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 4 sao</th>
+													<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 5 sao</th>
+												</tr>
+												<!-- hết dòng 1 -->
+
+												<!-- bắt đầu dòng 2 -->
+												<tr>
+													<td class="text-left">Chất lượng</td>
+													<td><input type="radio" name="chatluong" value="1"></td>
+													<td><input type="radio" name="chatluong" value="2"></td>
+													<td><input type="radio" name="chatluong" value="3"></td>
+													<td><input type="radio" name="chatluong" value="4"></td>
+													<td><input type="radio" name="chatluong" value="5"></td>
+												</tr>
+												<!-- kết thúc dòng 2 -->
+
+
+												<!-- bắt đầu dòng 3 -->
+												<tr>
+													<td class="text-left">Giá tiền</td>
+													<td><input type="radio" name="giatien" value="1"></td>
+													<td><input type="radio" name="giatien" value="2"></td>
+													<td><input type="radio" name="giatien" value="3"></td>
+													<td><input type="radio" name="giatien" value="4"></td>
+													<td><input type="radio" name="giatien" value="5"></td>
+												</tr>
+												<!-- kết thúc donòng 3 -->
+
+												<!-- bắt đầu dòng 4 -->
+												<tr>
+													<td class="text-left">Phục vụ</td>
+													<td><input type="radio" name="phucvu" value="1"></td>
+													<td><input type="radio" name="phucvu" value="2"></td>
+													<td><input type="radio" name="phucvu" value="3"></td>
+													<td><input type="radio" name="phucvu" value="4"></td>
+													<td><input type="radio" name="phucvu" value="5"></td>
+												</tr>
+												<!-- kết thúc dòng 4 -->
+											</table>
+										</fieldset>
+									</form>
+								</p>
+								<button type="submit" class="btn btn-lg btn-info" value="GỬI"> Gửi</button>
+								<div class="cothebanquantam">
+									Có thể bạn quan tâm
+									<hr style="border:1px solid /*#BE3841*/ #ff4a08;">
+
+								</div>
+								<!-- KẾT THÚC CÓ THỂ BẠN QUAN TÂM -->
+							</div>
+							<!-- end danh gia va binh luan -->
+
+
+						</div>
+						<!-- end thông tin kĩ thuật và video -->
+
+						<!-- BẮT ĐẦU CÓ THỂ BẠN QUAN TÂM -->
+
+					</div>
+					<!-- kết thúc thông tin chi tiết cho từng sản phẩm -->
+				</div>
+				<!-- End container -->
+				<!-- *********************** END CONTAINER ************************* -->
+				<!-- footer -->
+				<footer class="footer-distributed" style="background:/*#1F394B*/ #6ECABC;padding: 10px; margin-top: 20px;">
+
+					<div class="footer-left">
+
+						<span><img src="img/Bitmap.png"></span>
+
+						<p class="footer-links">
+							<a href="index.html">Trang chủ</a>
+							·
+							<a href="https://www.facebook.com/acekuto">Blog</a>
+							·
+							<a href="index.html">Pricing</a>
+							·
+							<a href="index.html">About</a>
+							·
+							<a href="index.html">Faq</a>
+							·
+							<a href="index.html">Contact</a>
+						</p>
+
+						<p class="footer-company-name">Toy Store &copy; 2016</p>
+					</div>
+
+					<div class="footer-center">
+
+						<div>
+							<i class="fa fa-map-marker"></i>
+							<p><span>125C Minh Khai</span> Hà Nội, Việt Nam</p>
+						</div>
+
+						<div>
+							<i class="fa fa-phone"></i>
+							<p>+1 555 123456</p>
+						</div>
+
+						<div>
+							<i class="fa fa-envelope"></i>
+							<p><a href="mailto:support@company.com">support@toystore.com</a></p>
+						</div>
+
+					</div>
+
+					<div class="footer-right">
+
+						<p class="footer-company-about">
+							<span>Toy Store</span>
+							Tất cả vì tương lai con em chúng ta, kệ tương lại con em chúng nó
+						</p>
+
+						<div class="footer-icons">
+
+							<a href="https://www.facebook.com/acekuto"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.facebook.com/acekuto"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.facebook.com/acekuto"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/luongpham1990/luongpham1990.github.io"><i class="fa fa-github"></i></a>
+
+						</div>
+
+					</div>
+
+				</footer>
+				<!-- ket thuc footer -->
+			</div>
+			<!-- kết thúc thông tin chi tiết cho từng sản phẩm -->
+
+			<!-- Modal Sign Up -->
+			<div class="modal fade" id="registerModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding:35px 50px;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4><span class="glyphicon glyphicon-lock"></span> Đăng ký</h4>
+						</div>
+						<div class="modal-body" style="padding:40px 50px;">
+							<form role="form">
+								<div class="form-group">
+									<label for="usrname"><span class="glyphicon glyphicon-user"></span> Tên đăng nhập</label>
+									<input type="text" class="form-control" id="usrname" placeholder="Email / Tên đăng nhập">
+								</div>
+								<div class="form-group">
+									<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Mật khẩu</label>
+									<input type="password" class="form-control" id="psw" placeholder="Enter password">
+								</div>
+								<div class="form-group">
+									<label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Nhập lại mật khẩu</label>
+									<input type="password" class="form-control" id="psw" placeholder="Repeat Enter password">
+								</div>
+								<div class="form-group">
+									<label for="psw"><span class="glyphicon glyphicon-envelope"></span>Nhập mail</label>
+									<input type="text" class="form-control" id="email" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<label for="dienthoai"><span class="glyphicon glyphicon-earphone"></span>
+										Điện thoại</label>
+										<input type="text" class="form-control"  name="dienthoai" id="dienthoai" placeholder="Điện thoại"/>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="" checked>Tôi đồng ý với điều khoản </label>
+									</div>
+									<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Đăng ký</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<p>Not a member? <a href="#">Sign Up</a></p>
+								<p>Forgot <a href="#">Password?</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal Login -->
+				<div class="modal fade" id="loginModal" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header" style="padding:35px 50px;">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4><span class="glyphicon glyphicon-lock"></span> Đăng nhập</h4>
+							</div>
+							<div class="modal-body" style="padding:40px 50px;">
+								<form role="form">
+									<div class="form-group">
+										<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+										<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+										<input type="text" class="form-control" id="psw" placeholder="Enter password">
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="" checked>Remember me</label>
+									</div>
+									<button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<p>Not a member? <a href="#">Sign Up</a></p>
+								<p>Forgot <a href="#">Password?</a></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+
+				$('#dmtien').click(function(){
+					$('.seemore-abso').toggleClass('seemore-block');
+
+					$('html,body').animate({
+						scrollTop: $("#dmtien").offset().top},
+						800);
+				});
+				$('#seemore1').click(function(){
+					$('.seemore-abso-1').toggleClass('seemore-block');
+
+					$('html,body').animate({
+						scrollTop: $("#seemore1").offset().top},
+						800);
+				});
+				$('#seemore2').click(function(){
+					$('.seemore-abso-2').toggleClass('seemore-block');
+
+					$('html,body').animate({
+						scrollTop: $("#seemore2").offset().top},
+						800);
+				});
+	// var xemthem = document.getElementsByClassName("bb");
+	$(document).ready(function(){
+		$("#myBtn").click(function(){
+			$("#registerModal").modal();
+		});
+	});
+	$(document).ready(function(){
+		$("#myBtn").click(function(){
+			$("#loginModal").modal();
+		});
+	});
+	$(document).ready(function(){
+		$('#ex1').zoom();
+		$('#ex2').zoom({ on:'grab' });
+	});
+	// <!-- <script>
+	// $(document).ready(function(){
+	// 	$("#li1").hover(function(){
+	// 		$("#ul1").slideToggle("fast");
+	// 	});
+	// });
+</script> 
+</body>

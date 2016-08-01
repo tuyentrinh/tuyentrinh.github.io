@@ -1,0 +1,270 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica,sans-serif;
+	margin: auto;
+	padding: auto;
+	font-size: 14px;
+	background: url(../img/bg.gif) center center repeat;
+	background-attachment: fixed;
+}
+img {
+	vertical-align: top;
+	border: 0;
+}
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+.clearfix{
+	clear: both;
+}
+.f-left, .left {
+	float: left !important;
+}
+.a-right {
+    text-align: right !important;
+}
+ul li {
+	list-style: none;
+}
+/*Clearfix*/
+.clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+/*End Clearfix*/
+
+.container {
+	background: #fff;
+}
+
+.header {
+	background: rgba(255, 255, 255, 0.33);
+}
+.register li {
+	display: inline-block;
+	border: none !important;
+}
+.register li a {
+	padding: 10px 10px;
+}
+.register:hover li a {
+	background: none;
+}
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 100%;
+}
+/*form bang dat hang*/
+form {
+	display: inline;
+}
+a .product-img {
+	cursor: pointer !important;
+}
+.a-center {
+	text-align: center !important;
+}
+
+.cart-table th {
+	vertical-align: bottom;
+	background: none repeat scroll 0 0 #BBDED9;
+	border: medium none !important;
+	font-size: 13px;
+	text-transform: none;
+	padding: 5px 10px;
+}
+.data-table th {
+	padding: 7px 10px;
+	font-weight: bold;
+	color: #1F394B;
+	border-bottom: 1px solid #d9d9d9;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.cart-table tbody td {
+	padding: 12px;
+	border-bottom: 1px solid #D2EEEA !important;
+	vertical-align: middle;
+}
+.nobr {
+	white-space: nowrap !important;
+}
+.data-table .btn-remove {
+	display: block;
+	margin: 0 auto;
+	width: 17px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	background: url(../img/btn_remove.gif) 0 0 no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+	cursor: pointer;
+}
+.product-name a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-family: sofia-bold, arial;
+}
+.product-name {
+	font-size: 12px;
+}
+.cart-table .cart-price {
+	font-weight: bold;
+	color: #00a58a;
+	font-size: 16px;
+}
+.cart-table input.soluong {
+	text-align: center;
+	border-radius: 0;
+	padding: 5px 0 4px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+/*nut dat hang*/
+button.button {
+	border: 0;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0;
+	background: #DE3601;
+	overflow: visible;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.buttons-cart {
+	margin-bottom: 20px;
+	padding: 10px 0 0 10px;
+}
+.buttons-cart .btn-continue {
+	margin-right: 10px;
+}
+.cart .col1-main-set .col1-set {
+	width: 485px;
+}
+button.button.gray span, a.button.gray {
+	padding: 0 0 0 4px;
+	height: 28px;
+}
+button.button.gray span span, a.button.gray span {
+	font: 14px/26px sofia-reg, Arial, Helvetica, sans-serif;
+	height: 28px;
+	padding: 0 7px 0 0;
+	color: #fff;
+	text-shadow: none;
+}
+ .discount label {
+    display: block;
+    padding-bottom: 12px;
+}
+ .discount input.input-text {
+    border: 1px solid #D0DDDB;
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 15px;
+    padding: 5px;
+    width: 300px;
+}
+input, select, textarea, button {
+    font: 12px Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    color: #1f394b;
+}
+
+
+/*nut thanh toan*/
+ .totals {
+    padding: 10px 9px;
+    font-size: 14px;
+}
+ .col2-main-set {
+    width: 220px;
+}
+.col2-set {
+    width: 235px;
+    border: 1px solid #cfede9;
+}
+
+ .totals table {
+    width: 100%;
+}
+ .totals table td {
+    font-weight: bold;
+}
+ .totals table th, .cart .totals table td {
+    padding: 0 5px 5px;
+    vertical-align: bottom;
+}
+ .totals table tfoot strong {
+    font-size: 15px;
+    font-weight: bold;
+    color: #00A58A;
+    display: block;
+    margin: 5px 0 10px;
+    text-transform: uppercase;
+}
+ .totals table tfoot td .price {
+    font-weight: bold;
+    font-size: 20px;
+}
+ .totals table td .price {
+    font-weight: normal;
+}
+ .checkout-types {
+    float: right;
+    text-align: center;
+}
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+ .totals table th,  .totals table td {
+    padding: 0 5px 5px;
+    vertical-align: bottom;
+}
+.checkout-types .btn-proceed-checkout span span {
+    border: 0;
+    padding: 0 11px 0 0 !important;
+    color: #fff;
+    font: 17px/34px sofia-reg,Arial,Helvetica,sans-serif !important;
+    height: 34px !important;
+    margin: 0 !important;
+    text-shadow: 0 -1px 1px #777777;
+}
+.v-fix {
+    float: left;
+}
+.discount input.input-text {
+    border: 1px solid #D0DDDB;
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 15px;
+    padding: 5px;
+    width: 300px;
+}
+.discount {
+    margin: 0 0 20px 0;
+    background: none repeat scroll 0 0 #E4F2F0;
+    padding: 20px;
+}
